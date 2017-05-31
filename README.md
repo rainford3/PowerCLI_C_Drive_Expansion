@@ -16,8 +16,13 @@ Blacklist:
 
 To blacklist servers, use the if statment on line 157 with a guest name check as outline below. If the below is used, the servers listed wont be increased under any circumstances.
 
-$server -Notlike "*something*"       //This is a wildcard check for a server name containing a string between asterisks 
-$server -Notlike "servername"        //This is an exact match of a server name
+This is a wildcard check for a server name containing a string between asterisks:
+
+- $server -Notlike "*something*"
+
+This is an exact match of a server name:
+
+- $server -Notlike "servername"
 
 # Overview of tasks
 
