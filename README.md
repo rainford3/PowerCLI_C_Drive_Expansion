@@ -18,7 +18,7 @@ To blacklist servers, use the if statment on line 157 with a guest name check as
 
 This is a wildcard check for a server name containing a string between asterisks:
 
-- $server -Notlike "*something*"
+- $server -Notlike "\*something\*"
 
 This is an exact match of a server name:
 
