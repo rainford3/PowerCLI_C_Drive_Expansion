@@ -3,6 +3,9 @@ Automated expansion Windows Guest C: drives (PowerCLI)
 
 This project was created to tackle the issues surrounding C: drive expansions in a Windows/ vSphere environment such as failed patches, BSOD's and login failure. This script proactively expands the VMDK (harddisk1 in the current environment) and guest harddisk (C: drive), reducing time used to fulfil this activity and reduce downtime.
 
+#Disclaimer
+Run this script at your own risk, I cannot be held responsible for any issues which may occur from the running of scripts inside this repository.
+
 # Components 
 
 This project comprises of a PowerCLI/ Powershell script which when run against a vCenter server, automates the expansion of C: drives on Windows guests running in a vSphere environment. The script creates a csv file to keep track of past expansions and a log file which dumps the output from the script after each run. A basic html formated email is then sent to the recipient detailing servers which have been expanded along with the log and csv files.
