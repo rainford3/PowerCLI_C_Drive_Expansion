@@ -12,6 +12,12 @@ File list:
 - PowerCLI_C_Drive_Expansion.ps1
 - PowerCLI_C_Drive_Expansion.vcenterserver.00-00-0000_00-00.log
 
+Blacklist:
+To blacklist servers, use the if statment on line 157 with a guest name check as outline below. If the below is used, the servers listed wont be increased under any circumstances.
+
+$server -Notlike "*something*"      //This is a wildcard check for a server name containing a string between asterisks 
+$server -Notlike "servername"       //This is an exact match of a server name
+
 # Overview of tasks
 
 This script performs the following tasks:
